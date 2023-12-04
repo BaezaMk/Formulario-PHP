@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="formulario">
+        <form action="form.php" method="post">
+            <table>
+                <tr>
+                    <td><input type="text" placeholder="Nombre" name="nombre" required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Contraseña" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="genero" value="M" required>Masculino
+                        <input type="radio" name="genero" value="F" required>Femenino
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="email" placeholder="Ingrese su email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="materia">
+                            <option value="" selected hidden>Materias</option>
+                            <option value="programming" required>Programación</option>
+                            <option value="database" required>Base de datos</option>
+                            <option value="sistemas" required>Gestión de sistemas</option>
+                            <option value="web" required>Desarrollo web</option>
+                            <option value="ingles" required>Inglés</option>
+                        </select>
+                        <input type="phone" placeholder="Teléfono" name="telefono" required>
+                    </td>
+                </tr>
+                <tr class="boton">
+                    <td><input type="submit" value="Enviar" name="enviar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
